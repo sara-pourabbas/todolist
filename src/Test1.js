@@ -13,7 +13,7 @@ export const Test1 = () => {
     const number = content.length;
     if (number === 0) {
       return "تمام شده";
-    } else if (number == 1 || number == 2) {
+    } else if (number === 1 || number === 2) {
       return "در حال اتمام";
     } else if (number >= 3 && number <= 10) {
       return number;
