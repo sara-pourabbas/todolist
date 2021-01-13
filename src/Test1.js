@@ -2,15 +2,15 @@ import React, { useState } from "react";
 
 export const Test1 = () => {
   const [content, setContent] = useState([]);
+  const [textInput, setTextInput] = useState("");
 
-  let textInput = React.createRef();
   const addItem = () => {
-    setContent((prevState) => [...prevState, textInput.current.value]);
+    setContent((prevState) => [...prevState, textInput]);
+    setTextInput("");
   };
 
   const checkStatus = () => {
     const number = content.length;
-    console.log(number, typeof number);
     if (number === 0) {
       return "تمام شده";
     } else if (number == 1 || number == 2) {
@@ -28,7 +28,12 @@ export const Test1 = () => {
         <button className="form__action__button" onClick={addItem}>
           Add
         </button>
-        <input className="form__action__input" type="text" ref={textInput} />
+        <input
+          className="form__action__input"
+          type="text"
+          value={textInput}
+          onChange={(e) => setTextInput(e.target.value)}
+        />
       </div>
       <div className="form__list">
         {content &&
