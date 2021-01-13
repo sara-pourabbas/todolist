@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 export const Test1 = () => {
-  const [content, setContent] = useState([]);
+  const [list, setList] = useState([]);
   const [textInput, setTextInput] = useState("");
 
   const addItem = () => {
-    setContent((prevState) => [...prevState, textInput]);
+    setList((prevState) => [...prevState, textInput]);
     setTextInput("");
   };
 
   const checkStatus = () => {
-    const number = content.length;
+    const number = list.length;
     if (number === 0) {
       return "تمام شده";
     } else if (number === 1 || number === 2) {
@@ -36,9 +36,9 @@ export const Test1 = () => {
         />
       </div>
       <div className="form__list">
-        {content &&
-          content.length !== 0 &&
-          content.map((item, ind) => (
+        {list &&
+          list.length !== 0 &&
+          list.map((item, ind) => (
             <div className="form__list__item" key={ind}>
               {item}
             </div>
