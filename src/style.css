@@ -1,25 +1,23 @@
-.container{
-text-align: center;
-margin-top: 100px;
+.container {
+  text-align: center;
+  margin-top: 100px;
 }
-.form__status{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.form__status {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.form__action__button{
-    background-color:green;
-    color:white;
-    border:1px solid #cccbcb;
-    border-radius: 5px;
-    padding: 10px 20px;
+.form__action__button {
+  background-color: #2ea043;
+  color: white;
+  border: 1px solid #cccbcb;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
-.form__action__input{
-    border-radius: 5px;
-    border:1px solid #cccbcb;
-    padding: 10px 20px;
-    margin: 0.8rem;
-
+.form__action__input {
+  border-radius: 5px;
+  border: 1px solid #cccbcb;
+  padding: 10px 20px;
+  margin: 0.8rem;
 }
-.form__list__item + .form__list__item{
-margin-top: 0.5rem;
+.form__list__item + .form__list__item {
+  margin-top: 0.5rem;
 }
